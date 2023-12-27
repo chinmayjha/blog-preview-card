@@ -1,0 +1,123 @@
+/* CSS for Modified Blog Preview Card */
+
+/* Reset margins */
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Card Styling */
+.blog-card {
+    width: min(87.2%, 336px);
+    min-width: 340px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 155px auto;
+    padding: 24px;
+    border: 1px solid hsla(0, 0%, 7%, 1);
+    box-shadow: 8px 8px 0px 0px hsla(0, 0%, 0%, 1);
+    border-radius: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-card:hover {
+    box-shadow: 5px 5px 0px 0px hsla(0, 0%, 7%, 1);
+    transition: ease-in 0.15s;
+}
+
+.card-image {
+    border-radius: 10px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-category {
+    width: 73px;
+    background-color: hsl(47, 88%, 63%);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-published-date {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-heading {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-text {
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsl(0, 0%, 50%);
+}
+
+.author-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.author {
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: hsl(0, 0%, 7%);
+}
+
+/* For tablet and desktop */
+@media (min-width: 1000px) and (max-width: 1440px) {
+    .blog-card {
+        margin-top: 79.5px;
+        margin-bottom: 67.5px;
+    }
+
+    .card-category {
+        font-size: 0.875rem;
+        width: 82px;
+    }
+
+    .card-published-date {
+        font-size: 0.875rem;
+    }
+
+    .card-heading {
+        font-size: 1.5rem;
+    }
+
+    .card-heading:hover {
+        color: hsl(47, 88%, 63%);
+        transition: ease-in 0.15s;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
